@@ -1,0 +1,18 @@
+{
+  "owner": "openclaw",
+  "slug": "task-budget",
+  "version": "0.4.1",
+  "createdAt": "2026-06-24T22:38:00+08:00",
+  "updatedAt": "2026-06-24T23:55:00+08:00",
+  "tags": ["memory", "agent-loop", "openclaw", "safety", "autoresearch", "decay-signal"],
+  "description": "通用开放式任务预算守门员 + 轮次衰减协议,防 OOM",
+  "inspiredBy": "https://github.com/karpathy/autoresearch",
+  "keyFeatures": [
+    "轮次衰减协议:用新增数变化率自动终止",
+    "轮数用户可配,默认 20 轮",
+    "搜索轮 vs 收尾轮分离:终止判断只看搜索轮",
+    "切分子任务:多类信息并行",
+    "禁知识兜底:工具失败必须返回 failed"
+  ],
+  "source": "local"
+}
